@@ -5,3 +5,5 @@ local opt = vim.opt
 
 opt.colorcolumn = "80"
 opt.list = false
+opt.shiftwidth = 8
+opt.tabstop = 8
