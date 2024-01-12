@@ -5,4 +5,6 @@ return {
   { "echasnovski/mini.indentscope", enabled = false },
   -- disable nvim-neo-tree
   { "nvim-neo-tree/neo-tree.vim", enabled = false },
+  -- disable flash
+  { "folke/flash.nvim", enabled = false },
 }
