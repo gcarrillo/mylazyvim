@@ -9,4 +9,6 @@ return {
   { "folke/flash.nvim", enabled = false },
   -- disable treesitter-context
   { "nvim-treesitter/nvim-treesitter-context", enabled = false },
+  -- disable noice
+  { "folke/noice.nvim", enabled = false },
 }
