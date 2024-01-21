@@ -35,7 +35,6 @@ return { -- override nvim-cmp and add cmp-emoji
           { name = "nvim_lsp" },
           { name = "luasnip" },
           { name = "path" },
-        }, {
           { name = "buffer" },
         }),
         formatting = {
