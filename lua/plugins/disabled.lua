@@ -7,4 +7,6 @@ return {
   { "nvim-neo-tree/neo-tree.vim", enabled = false },
   -- disable flash
   { "folke/flash.nvim", enabled = false },
+  -- disable treesitter-context
+  { "nvim-treesitter/nvim-treesitter-context", enabled = false },
 }
