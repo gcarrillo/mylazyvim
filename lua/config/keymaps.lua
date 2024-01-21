@@ -4,6 +4,9 @@
 vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>sB", "<cmd>Telescope builtin<cr>")
+-- nvim-window
+vim.keymap.set("n", "_", "<cmd>:lua require('nvim-window').pick()<CR>", { desc = "Pick a window" })
+
 -- delete default lazyvim mappings to switch buffers
 vim.keymap.del("n", "<S-l>")
 vim.keymap.del("n", "<S-h>"
