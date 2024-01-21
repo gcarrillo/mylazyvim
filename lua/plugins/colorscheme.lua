@@ -46,6 +46,14 @@ return {
       },
     },
   },
+  -- One half colorscheme
+  {
+    "sonph/onehalf",
+
+    config = function(plugin)
+      vim.opt.rtp:append(plugin.dir .. "/vim")
+    end,
+  },
   -- Configure LazyVim to load catppuccin
   {
     "LazyVim/LazyVim",
