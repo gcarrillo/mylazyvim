@@ -6,6 +6,12 @@ return { -- override nvim-cmp and add cmp-emoji
       local cmp = require("cmp")
       local defaults = require("cmp.config.default")()
       return {
+        -- Improved legibility, but doesn't work correctly; return type boxes
+        -- are drawn over completion menu at times.  Fix?
+        -- window = {
+        --   completion = cmp.config.window.bordered(),
+        --   documentation = cmp.config.window.bordered(),
+        -- },
         completion = {
           completeopt = "menu,menuone,noinsert",
         },
@@ -32,6 +38,7 @@ return { -- override nvim-cmp and add cmp-emoji
           end,
         }),
         sources = cmp.config.sources({
+          { name = "copilot" },
           { name = "nvim_lsp" },
           { name = "luasnip" },
           { name = "path" },
@@ -47,9 +54,7 @@ return { -- override nvim-cmp and add cmp-emoji
           end,
         },
         experimental = {
-          ghost_text = {
-            hl_group = "CmpGhostText",
-          },
+          ghost_text = { hl_group = "CmpGhostText" },
         },
         sorting = defaults.sorting,
       }
