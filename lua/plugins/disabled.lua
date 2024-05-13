@@ -5,4 +5,6 @@ return {
   { "echasnovski/mini.indentscope", enabled = false },
   -- disable treesitter-context
   { "nvim-treesitter/nvim-treesitter-context", enabled = false },
+  -- disable bufferline
+  { "akinsho/bufferline.nvim", enabled = false },
 }
