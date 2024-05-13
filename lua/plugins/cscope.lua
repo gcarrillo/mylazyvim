@@ -11,6 +11,7 @@ return {
       opts = {
         -- USE EMPTY FOR DEFAULT OPTIONS
         -- DEFAULTS ARE LISTED BELOW
+        prefix = "<leader>C", -- prefix to trigger maps
         cscope = {
           -- choose your fav picker
           picker = "telescope", -- "telescope", "fzf-lua" or "quickfix"
