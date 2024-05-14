@@ -4,3 +4,7 @@
 
 -- nvim-window
 vim.keymap.set("n", "_", "<cmd>:lua require('nvim-window').pick()<CR>", { desc = "Pick a window" })
+
+-- delete default lazyvim mappings to switch buffers
+vim.keymap.del("n", "<S-l>")
+vim.keymap.del("n", "<S-h>")
